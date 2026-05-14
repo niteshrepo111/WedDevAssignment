@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gushwork - Assignment</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+    <!-- =====================
+         PERSISTENT NAV BAR
+         Always visible at the very top of the page.
+         Contains logo + navigation links.
+    ===================== -->
+    <nav class="navbar" id="navbar" role="navigation" aria-label="Primary navigation">
+        <div class="nav-inner">
+
+            <div class="nav-logo">
+                <span class="logo-text">Gushwork</span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero"             class="nav-link">Home</a></li>
+                <li><a href="#services"         class="nav-link">Services</a></li>
+                <li><a href="#carousel-section" class="nav-link">Gallery</a></li>
+                <li><a href="#contact"          class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-cta">
+                <a href="#contact" class="btn btn-primary">Get Started</a>
+            </div>
+
+            <!-- Mobile hamburger -->
+            <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+        </div>
+
+        <!-- Mobile drawer -->
+        <div class="mobile-drawer" id="mobileDrawer">
+            <ul class="mobile-nav-links">
+                <li><a href="#hero"             class="mobile-nav-link">Home</a></li>
+                <li><a href="#services"         class="mobile-nav-link">Services</a></li>
+                <li><a href="#carousel-section" class="mobile-nav-link">Gallery</a></li>
+                <li><a href="#contact"          class="mobile-nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+
+    <!-- =====================
+         STICKY HEADER
+         Hidden by default. Slides in ABOVE the navbar area
+         when user scrolls past the hero section.
+         Disappears when scrolling back to top.
+    ===================== -->
+    <header class="sticky-header" id="stickyHeader" role="banner">
+        <div class="sticky-header-inner">
+            <span class="logo-text">Gushwork</span>
+            <p class="sticky-tagline">Building the web, beautifully.</p>
+            <a href="#contact" class="btn btn-primary btn-sm">Get Started</a>
+        </div>
+    </header>
+
+
+    <!-- =====================
+         HERO SECTION
+         Full viewport height landing section.
+    ===================== -->
+    <section class="hero" id="hero" aria-label="Hero section">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <p class="hero-eyebrow">Welcome to Gushwork</p>
+            <h1 class="hero-title">Build Something <span class="highlight">Amazing</span> Together</h1>
+            <p class="hero-subtitle">
+                A responsive, pixel-perfect web experience built with pure HTML, CSS &amp; JavaScript.
+            </p>
+            <div class="hero-actions">
+                <a href="#carousel-section" class="btn btn-white">Explore Work</a>
+                <a href="#contact"          class="btn btn-outline">Contact Us</a>
+            </div>
+        </div>
+        <div class="scroll-indicator" aria-hidden="true">
+            <div class="scroll-dot"></div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         SERVICES SECTION
+    ===================== -->
+    <section class="services" id="services" aria-label="Services section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">What We Do</p>
+                <h2 class="section-title">Our Services</h2>
+                <p class="section-subtitle">We deliver high-quality digital solutions tailored to your needs.</p>
+            </div>
+            <div class="services-grid">
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <rect x="2" y="3" width="20" height="14" rx="2"/>
+                            <line x1="8" y1="21" x2="16" y2="21"/>
+                            <line x1="12" y1="17" x2="12" y2="21"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Web Design</h3>
+                    <p class="service-desc">Pixel-perfect, responsive designs that look great on every device and screen size.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <polyline points="16 18 22 12 16 6"/>
+                            <polyline points="8 6 2 12 8 18"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Development</h3>
+                    <p class="service-desc">Clean, well-structured code using modern HTML5, CSS3, and vanilla JavaScript.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"/>
+                            <line x1="2" y1="12" x2="22" y2="12"/>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Responsive</h3>
+                    <p class="service-desc">Fully responsive layouts that adapt seamlessly across desktop, tablet, and mobile.</p>
+                </article>
+
+                <article class="service-card">
+                    <div class="service-icon" aria-hidden="true">
+                        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                        </svg>
+                    </div>
+                    <h3 class="service-title">Performance</h3>
+                    <p class="service-desc">Optimized for speed, accessibility, and cross-browser compatibility.</p>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         IMAGE CAROUSEL WITH ZOOM
+         Multi-card carousel. Hover any image for zoom effect.
+         Click any image to open full lightbox.
+    ===================== -->
+    <section class="carousel-section" id="carousel-section" aria-label="Image carousel section">
+        <div class="container">
+            <div class="section-header">
+                <p class="section-eyebrow">Our Gallery</p>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">Hover over any image to see a zoomed preview. Click to enlarge.</p>
+            </div>
+
+            <div class="carousel-wrapper">
+
+                <button class="carousel-btn carousel-btn--prev" id="prevBtn" aria-label="Previous slide">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="15 18 9 12 15 6"/>
+                    </svg>
+                </button>
+
+                <div class="carousel-viewport" id="carouselViewport">
+                    <div class="carousel-track" id="carouselTrack">
+
+                        <div class="carousel-slide" role="group" aria-label="Slide 1 of 5">
+                            <div class="zoom-container">
+                                <img src="https://picsum.photos/id/1015/600/400" alt="Mountain landscape" class="carousel-img" loading="lazy">
+                                <div class="zoom-overlay" aria-hidden="true">
+                                    <div class="zoom-icon">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                            <line x1="11" y1="8" x2="11" y2="14"/>
+                                            <line x1="8" y1="11" x2="14" y2="11"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>Mountain Landscape</h3>
+                                <p>Breathtaking views from the summit</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide" role="group" aria-label="Slide 2 of 5">
+                            <div class="zoom-container">
+                                <img src="https://picsum.photos/id/1016/600/400" alt="Forest path" class="carousel-img" loading="lazy">
+                                <div class="zoom-overlay" aria-hidden="true">
+                                    <div class="zoom-icon">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                            <line x1="11" y1="8" x2="11" y2="14"/>
+                                            <line x1="8" y1="11" x2="14" y2="11"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>Forest Path</h3>
+                                <p>A serene walk through nature</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide" role="group" aria-label="Slide 3 of 5">
+                            <div class="zoom-container">
+                                <img src="https://picsum.photos/id/1018/600/400" alt="Ocean waves" class="carousel-img" loading="lazy">
+                                <div class="zoom-overlay" aria-hidden="true">
+                                    <div class="zoom-icon">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                            <line x1="11" y1="8" x2="11" y2="14"/>
+                                            <line x1="8" y1="11" x2="14" y2="11"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>Ocean Waves</h3>
+                                <p>The calming rhythm of the sea</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide" role="group" aria-label="Slide 4 of 5">
+                            <div class="zoom-container">
+                                <img src="https://picsum.photos/id/1025/600/400" alt="Desert dunes" class="carousel-img" loading="lazy">
+                                <div class="zoom-overlay" aria-hidden="true">
+                                    <div class="zoom-icon">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                            <line x1="11" y1="8" x2="11" y2="14"/>
+                                            <line x1="8" y1="11" x2="14" y2="11"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>Desert Dunes</h3>
+                                <p>Golden sands stretching to the horizon</p>
+                            </div>
+                        </div>
+
+                        <div class="carousel-slide" role="group" aria-label="Slide 5 of 5">
+                            <div class="zoom-container">
+                                <img src="https://picsum.photos/id/1035/600/400" alt="City skyline" class="carousel-img" loading="lazy">
+                                <div class="zoom-overlay" aria-hidden="true">
+                                    <div class="zoom-icon">
+                                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2">
+                                            <circle cx="11" cy="11" r="8"/>
+                                            <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+                                            <line x1="11" y1="8" x2="11" y2="14"/>
+                                            <line x1="8" y1="11" x2="14" y2="11"/>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slide-caption">
+                                <h3>City Skyline</h3>
+                                <p>Urban architecture at its finest</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <button class="carousel-btn carousel-btn--next" id="nextBtn" aria-label="Next slide">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <polyline points="9 18 15 12 9 6"/>
+                    </svg>
+                </button>
+
+            </div>
+
+            <!-- Dot indicators -->
+            <div class="carousel-dots" id="carouselDots" role="tablist" aria-label="Carousel navigation"></div>
+
+        </div>
+
+        <!-- Lightbox / Zoom Modal -->
+        <div class="zoom-modal" id="zoomModal" role="dialog" aria-modal="true" aria-label="Zoomed image" hidden>
+            <div class="zoom-modal-backdrop" id="zoomBackdrop"></div>
+            <div class="zoom-modal-content">
+                <button class="zoom-modal-close" id="zoomClose" aria-label="Close">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                        <line x1="18" y1="6" x2="6" y2="18"/>
+                        <line x1="6" y1="6" x2="18" y2="18"/>
+                    </svg>
+                </button>
+                <img src="" alt="" class="zoom-modal-img" id="zoomModalImg">
+                <p class="zoom-modal-caption" id="zoomModalCaption"></p>
+            </div>
+        </div>
+
+    </section>
+
+
+    <!-- =====================
+         CONTACT SECTION
+    ===================== -->
+    <section class="contact" id="contact" aria-label="Contact section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <div class="contact-info">
+                    <p class="section-eyebrow">Get In Touch</p>
+                    <h2 class="section-title contact-title">Let's Work Together</h2>
+                    <p class="contact-desc">
+                        Have a project in mind? We'd love to hear about it. Send us a message and we'll get back to you as soon as possible.
+                    </p>
+                    <ul class="contact-details">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                <polyline points="22,6 12,13 2,6"/>
+                            </svg>
+                            <span>hello@gushwork.com</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+                                <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                <circle cx="12" cy="10" r="3"/>
+                            </svg>
+                            <span>San Francisco, CA</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <form class="contact-form" id="contactForm" novalidate aria-label="Contact form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="John Doe" required autocomplete="name">
+                        <span class="form-error" id="nameError" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email Address</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="john@example.com" required autocomplete="email">
+                        <span class="form-error" id="emailError" role="alert"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Message</label>
+                        <textarea id="message" name="message" class="form-input form-textarea" placeholder="Tell us about your project..." required rows="5"></textarea>
+                        <span class="form-error" id="messageError" role="alert"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Send Message</button>
+                    <p class="form-success" id="formSuccess" role="status" hidden>
+                        ✓ Message sent successfully! We'll be in touch soon.
+                    </p>
+                </form>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- =====================
+         FOOTER
+    ===================== -->
+    <footer class="footer" role="contentinfo">
+        <div class="container">
+            <div class="footer-inner">
+                <div class="footer-brand">
+                    <span class="logo-text footer-logo">Gushwork</span>
+                    <p>Building the web, one pixel at a time.</p>
+                </div>
+                <nav class="footer-nav" aria-label="Footer navigation">
+                    <a href="#hero">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#carousel-section">Gallery</a>
+                    <a href="#contact">Contact</a>
+                </nav>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Nitesh Kumar Singh. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
